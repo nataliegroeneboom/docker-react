@@ -4,7 +4,7 @@ services:
 
 before_install:
   - docker build -t groeneboom82/docker-react -f Dockerfile.dev .
-  - gem install bundler
+
 
 script: 
   - docker run groeneboom82/docker-react npm run test -- --coverage
